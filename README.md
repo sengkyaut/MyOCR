@@ -8,6 +8,7 @@ Some script that I copy from https://github.com/astutejoe/tesseract-tutorial and
  - https://github.com/tesseract-ocr/tesseract (Used validate_myanmar.cpp modified version)
  - https://github.com/tesseract-ocr/tessdata_best (For mya.lstm ref)
  - https://github.com/tesseract-ocr/langdata_lstm (For charsets)
+ - https://github.com/kaungyeehein/mm-ocr (tesseract dev script and tools installation)
 
 # To do
 
