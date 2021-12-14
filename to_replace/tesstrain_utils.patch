@@ -1,0 +1,13 @@
+--- /usr/share/tesseract-ocr/tesstrain_utils.sh	2019-12-31 00:20:38.000000000 +0630
++++ tesstrain_utils.sh	2021-12-14 23:48:15.182108152 +0630
+@@ -278,8 +278,8 @@
+         break
+       fi
+     done
+-
+-    run_command text2image ${common_args} --font="${font}" --ptsize ${PT_SIZE} \
++# --output_word_boxes 
++    run_command text2image --output_word_boxes ${common_args} --font="${font}" --ptsize ${PT_SIZE} \
+         --text=${TRAINING_TEXT}  ${TEXT2IMAGE_EXTRA_ARGS:-}
+     check_file_readable ${outbase}.box ${outbase}.tif
+ 

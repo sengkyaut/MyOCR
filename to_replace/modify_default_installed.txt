@@ -1,0 +1,15 @@
+/usr/share/tesseract-ocr/language-specific.sh
+/usr/share/tesseract-ocr/tesstrain.sh
+/usr/share/tesseract-ocr/tesstrain_utils.sh
+
+~/tesseract/src/training/unicharset/validate_myanmar.cpp
+
+#generate
+diff -u working/slang.c latest/slang.c > slang.patch
+#patch
+patch -u working.slang.c -i slang.patch
+
+
+
+patch -ub /usr/share/tesseract-ocr/tesstrain_utils.sh -i tesstrain_utils.patch
+patch /home/workspace/tesseract/src/training/unicharset/validate_myanmar.cpp -i validate_myanmar.patch

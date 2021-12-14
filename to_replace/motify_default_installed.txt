@@ -1,5 +1,0 @@
-/usr/share/tesseract-ocr/language-specific.sh
-/usr/share/tesseract-ocr/tesstrain.sh
-/usr/share/tesseract-ocr/tesstrain_utils.sh
-
-~/tesseract/src/training/unicharset/validate_myanmar.cpp
