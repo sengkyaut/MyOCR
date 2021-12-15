@@ -30,7 +30,7 @@ chmod +x MyOCR/install/install.sh
 git clone https://github.com/tesseract-ocr/langdata_lstm.git
 cd langdata_lstm
 sudo docker pull sengkyaut/t4cmp:latest
-sudo docker run --rm -d -p 2222:22 -v ${PWD}:/langdata_lstm -v --name skt4cmp sengkyaut/t4cmp
+sudo docker run --rm -d -p 2222:22 -v ${PWD}:/langdata_lstm --name skt4cmp sengkyaut/t4cmp
 ```
 or
 ```
