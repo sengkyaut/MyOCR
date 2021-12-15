@@ -15,3 +15,20 @@ export OCR_WORKSPACE=~/workspace
 echo "export OCR_WORKSPACE=$OCR_WORKSPACE" >> ~/.profile
 git clone https://github.com/sengkyaut/MyOCR $OCR_WORKSPACE/MyOCR
 git clone https://github.com/tesseract-ocr/tesseract.git $OCR_WORKSPACE/tesseract
+
+#patching
+bash $OCR_WORKSPACE/MyOCR/patch_files/start_patch.sh
+
+#compiling
+cd $OCR_WORKSPACE/tesseract
+./autogen.sh && ./configure
+make
+sudo make install
+sudo ldconfig
+
+#make training tools
+make training
+sudo make training-install
+
+#build deb pkg (not necessary)
+#checkinstall -D --install=no -y --pakdir=~/pkg --pkgname=tesseract-sk-latest
