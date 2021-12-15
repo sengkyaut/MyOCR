@@ -1,0 +1,17 @@
+#!/bin/bash
+sudo apt update && sudo apt install -y \
+	autoconf autoconf-archive automake build-essential checkinstall \
+	cmake g++ git pkg-config wget xzgv zlib1g-dev \
+	libtesseract-dev libcairo2-dev libicu-dev libjpeg-dev libpango1.0-dev \
+	libgif-dev libwebp-dev libopenjp2-7-dev libpng-dev libtiff-dev libtool
+#	tesseract-ocr-mya tesseract-ocr-script-mymr
+
+#add path env
+echo "export PATH=$PATH:/usr/share/tesseract-ocr" >> ~/.profile
+echo "export TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata" >> ~/.profile
+
+#workspace
+export OCR_WORKSPACE=~/workspace
+echo "export OCR_WORKSPACE=$OCR_WORKSPACE" >> ~/.profile
+git clone https://github.com/sengkyaut/MyOCR $OCR_WORKSPACE/MyOCR
+git clone https://github.com/tesseract-ocr/tesseract.git $OCR_WORKSPACE/tesseract
