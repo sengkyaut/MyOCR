@@ -14,10 +14,10 @@ echo "export TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata" >> ~/.profi
 export OCR_WORKSPACE=~/workspace
 echo "export OCR_WORKSPACE=$OCR_WORKSPACE" >> ~/.profile
 git clone https://github.com/sengkyaut/MyOCR $OCR_WORKSPACE/MyOCR
-git clone https://github.com/tesseract-ocr/tesseract.git $OCR_WORKSPACE/tesseract
+git clone https://github.com/sengkyaut/tesseract.git $OCR_WORKSPACE/tesseract
 
 #patching
-bash $OCR_WORKSPACE/MyOCR/patch_files/start_patch.sh
+#bash $OCR_WORKSPACE/MyOCR/patch_files/start_patch.sh
 
 #compiling
 cd $OCR_WORKSPACE/tesseract
