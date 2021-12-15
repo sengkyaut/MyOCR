@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  skt4cmp:
+    image: sengkyaut:t4cmp
+    volumes:
+      - $PWD:/MyOCR
+

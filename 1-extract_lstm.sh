@@ -1,1 +1,1 @@
-combine_tessdata -e ~/tessdata_best/mya.traineddata mya.lstm
+combine_tessdata -e $TESSDATA_PREFIX/mya.traineddata mya.lstm
