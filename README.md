@@ -32,7 +32,7 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 ```
 
-Run Docker
+## Run Docker (recommend)
 ```
 git clone https://github.com/tesseract-ocr/langdata_lstm.git
 cd langdata_lstm
