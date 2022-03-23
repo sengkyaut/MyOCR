@@ -26,6 +26,13 @@ chmod +x MyOCR/install/install.sh
 ```
 
 ## Using Docker
+How to install Docker
+```
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+```
+
+Run Docker
 ```
 git clone https://github.com/tesseract-ocr/langdata_lstm.git
 cd langdata_lstm
@@ -39,12 +46,12 @@ cd MyOCR
 docker-compose up
 ```    
 
- - **tesserect** source repo and **MyOCR** repo located in **/root/workspace**
- - **langdata_lstm** repo also mounted in **/langdata_lstm**
-
 ### login to docker container
 `ssh root@localhost -p 2222`
 **password is `toor`**
+
+ - **tesserect** source repo and **MyOCR** repo located in **/root/workspace**
+ - **langdata_lstm** repo also mounted in **/langdata_lstm**
 
 # To do
 
